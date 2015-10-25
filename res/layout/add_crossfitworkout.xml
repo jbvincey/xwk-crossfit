@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    android:orientation="vertical" >
+
+    <!--
+        <TextView
+        style="@style/form_text"
+        android:text="@string/add_name" />
+    -->
+
+    <EditText
+        android:id="@+id/add_crossfitworkout_name"
+        style="@style/form_edittext"
+        android:layout_marginTop="12dp"
+        android:hint="@string/add_name"
+        android:imeOptions="actionNext"
+        android:inputType="text" />
+
+    <!--
+          <TextView
+        style="@style/form_text"
+        android:text="@string/add_description" />
+    -->
+
+    <EditText
+        android:id="@+id/add_crossfitworkout_description"
+        style="@style/form_edittext"
+        android:layout_marginTop="12dp"
+        android:hint="@string/add_description"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/add_crossfitworkout_sets"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="@string/number_of_sets"
+        android:textColor="@color/lightgray1"
+        android:textSize="16sp" />
+
+    <!--
+        <EditText
+        android:id="@+id/add_crossfitworkout_sets"
+        style="@style/form_edittext"
+        android:layout_marginTop="12dp"
+        android:hint="@string/sets_title"
+        android:imeOptions="actionNext"
+        android:inputType="text" />
+    -->
+
+    <Button
+        android:id="@+id/addworkout_addexercise_button"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonselector"
+        android:text="@string/add_crossfitworkout_addexercise"
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/addworkout_exercise_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:divider="@android:color/transparent"
+        android:drawSelectorOnTop="false"
+        android:overScrollMode="never" />
+
+    <!--
+          android:dividerHeight="6dp"
+            android:padding="6dp"
+    -->
+
+</LinearLayout>

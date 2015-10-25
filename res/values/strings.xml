@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XWK crossfit</string>
+    
+    <string name="add_crossfitworkout">Add</string>
+    <string name="delete_crossfitworkout">Delete</string>
+    <string name="see_performances">See </string>
+    <string name="add_name">Name</string>
+    <string name="add_description">Description</string>
+    <string name="add_type">Type</string>
+    <string name="add_crossfitworkout_addexercise">Add exercise</string>
+    <string name="crossfitworkout_activity_gotraining">Start workout</string>
+    <string name="crossfitworkout_training_next">Start</string>
+    <string name="crossfitworkout_training_timer">00:00</string>
+    <string name="contentDescriptionExercisePicture">Exercise picture</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="exercise">Exercises</string>
+    <string name="comment">Comment</string>
+    <string name="historical">History</string>
+    <string name="legs">legs</string>
+    <string name="chest">chest</string>
+    <string name="arms">arms</string>
+    <string name="back">back</string>
+	<string name="abs">abs</string>
+	<string name="exercisetype">Exercise type</string>
+	<string name="edit">Edit</string>
+	<string name="delete">Delete</string>
+	<string name="add_exercise_type">Exercise type:</string>
+	<string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="sets_title">Number of sets</string>
+    <string name="number_of_sets">Number of sets: 1</string>
+    
+</resources>

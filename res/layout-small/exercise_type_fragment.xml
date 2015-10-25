@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkgray" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:background="@color/red1"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/exercisetype" />
+    
+    <LinearLayout
+        android:id="@+id/exercise_type_legs"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@drawable/list_alertdialog">
+
+        <TextView
+            style="@style/big_text_list"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="@string/legs"
+            android:textColor="@color/lightgray1"
+            android:paddingBottom="8dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:src="@drawable/legsmedium5white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exercise_type_chest"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@drawable/list_alertdialog" >
+
+        <TextView
+            style="@style/big_text_list"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="@string/chest"
+            android:textColor="@color/lightgray1"
+            android:paddingBottom="8dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:src="@drawable/chestmedium5white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exercise_type_arms"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@drawable/list_alertdialog" >
+
+        <TextView
+            style="@style/big_text_list"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="@string/arms"
+            android:textColor="@color/lightgray1"
+            android:paddingBottom="8dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:src="@drawable/armsmedium5white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exercise_type_back"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@drawable/list_alertdialog" >
+
+        <TextView
+            style="@style/big_text_list"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="@string/back"
+            android:textColor="@color/lightgray1"
+            android:paddingBottom="8dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:src="@drawable/backmedium5white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exercise_type_abs"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@drawable/list_alertdialog" >
+
+        <TextView
+            style="@style/big_text_list"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:text="@string/abs"
+            android:textColor="@color/lightgray1"
+            android:paddingBottom="8dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.4"
+            android:src="@drawable/absmedium5white" />
+    </LinearLayout>
+
+</LinearLayout>

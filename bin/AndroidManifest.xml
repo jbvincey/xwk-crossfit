@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jbvincey.xwk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon7"
+        android:logo="@drawable/icon8"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xwk.controller.WelcomeActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.xwk.controller.CrossfitWorkoutList"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.xwk.controller.CrossfitWorkoutActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"> 
+        </activity>
+        <activity android:name="com.xwk.controller.AddExercise"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"> 
+        </activity>
+        <activity android:name="com.xwk.controller.AddCrossfitWorkout"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppThemeDark"
+            android:screenOrientation="portrait"> 
+        </activity>
+        <activity android:name="com.xwk.controller.ChooseExercise"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppThemeDark"
+            android:screenOrientation="portrait"> 
+        </activity>
+        <activity android:name="com.xwk.controller.CrossfitWorkoutTraining"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"> 
+        </activity>
+        <activity android:name="com.xwk.controller.CrossfitPerformanceActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"> 
+        </activity>
+    </application>
+
+</manifest>

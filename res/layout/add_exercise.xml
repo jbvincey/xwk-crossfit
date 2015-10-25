@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    android:orientation="vertical"
+    tools:context="com.xwk.controller.AddExercise"
+    tools:ignore="MergeRootFrame" >
+
+    <!--
+          <TextView
+        style="@style/form_text"
+        android:text="@string/add_name" />
+    -->
+
+    <EditText
+        android:id="@+id/exercise_activity_name"
+        style="@style/form_edittext"
+        android:layout_marginTop="12dp"
+        android:hint="@string/add_name"
+        android:imeOptions="actionNext"
+        android:inputType="text" />
+
+    <!--
+         <TextView
+        style="@style/form_text"
+        android:text="@string/add_description" />
+    -->
+
+    <EditText
+        android:id="@+id/exercise_activity_description"
+        style="@style/form_edittext"
+        android:layout_marginTop="12dp"
+        android:hint="@string/add_description"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine" />
+
+    <!--
+         <TextView
+        style="@style/form_text"
+        android:text="@string/add_type" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/exercise_activity_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="0.5"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="20dp"
+            android:text="@string/add_exercise_type"
+            android:textColor="@color/lightgray1"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/exercise_activity_type_image"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/legsmedium5white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightgray1" >
+
+        <ImageView
+            android:id="@+id/exercise_activity_exerciseimage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="32dp"
+            android:contentDescription="@string/contentDescriptionExercisePicture"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/nopicture" />
+    </LinearLayout>
+
+</LinearLayout>

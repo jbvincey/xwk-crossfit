@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="610dp"
+    android:background="@color/darkgray"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <!--
+    android:minWidth="400dp"
+    android:minHeight="666dp"
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="68dp"
+        android:background="@color/red1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/exercise_details_fragment_title"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_weight="0.75"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/exercise_details_fragment_image"
+            android:layout_width="0dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:paddingTop="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exercise_details_fragment_description"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:background="@color/darkgray"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <!-- height: 120 -->
+
+    <com.xwk.misc.ResizableImageView
+        android:id="@+id/exercise_details_fragment_pic"
+        android:layout_width="450dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/contentDescriptionExercisePicture"
+        android:gravity="center"
+        android:src="@drawable/nopicture" />
+
+<!--          android:minHeight="412dp" -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/exercise_details_fragment_button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_alertdialog"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/exercise_details_fragment_button"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_alertdialog"
+            android:text="@string/ok"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context="com.xwk.controller.ChooseExercise"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
+        android:background="@color/darkgray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/button_legs"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/darkgray"
+            android:gravity="center"
+            android:text="@string/legs"
+            android:textColor="@color/white" >
+
+            <ImageView
+                android:id="@+id/button_image_legs"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/legsmedium5white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_chest"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/darkgray"
+            android:gravity="center"
+            android:text="@string/chest"
+            android:textColor="@color/white" >
+
+            <ImageView
+                android:id="@+id/button_image_chest"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/chestmedium5white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_arms"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/darkgray"
+            android:gravity="center"
+            android:text="@string/arms"
+            android:textColor="@color/white" >
+
+            <ImageView
+                android:id="@+id/button_image_arms"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/armsmedium5white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_back"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/darkgray"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/white" >
+
+            <ImageView
+                android:id="@+id/button_image_back"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/backmedium5white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_abs"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/darkgray"
+            android:gravity="center"
+            android:text="@string/abs"
+            android:textColor="@color/white" >
+
+            <ImageView
+                android:id="@+id/button_image_abs"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/absmedium5white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/choose_exercise_listview"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.6"
+        android:divider="@android:color/transparent"
+        android:drawSelectorOnTop="false"
+        android:overScrollMode="never" />
+
+</LinearLayout>
